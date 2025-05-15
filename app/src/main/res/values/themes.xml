@@ -1,0 +1,103 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RPMProekt" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Цвета -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Цвет status bar -->
+        <item name="android:statusBarColor">@color/white</item>
+
+        <!-- Отключение ActionBar -->
+        <item name="android:windowNoTitle">true</item> <!-- Убирает ActionBar -->
+        <item name="android:windowActionBar">false</item> <!-- Убирает ActionBar -->
+
+        <!-- Кнопки -->
+        <item name="materialButtonStyle">@style/MyGradientButtonStyle</item>
+
+        <!-- Глобальный стиль для TextInputLayout -->
+        <item name="textInputStyle">@style/PhoneInputStyle</item>
+
+        <!-- Глобальный стиль для TextInputEditText -->
+        <item name="editTextStyle">@style/GrayInputEditText</item>
+    </style>
+
+
+    <!-- Стили для текстовых полей -->
+    <style name="PhoneInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="hintTextColor">@color/enter_number_gray</item>
+        <item name="android:textColorHint">@color/enter_number_gray</item>
+        <item name="boxStrokeColor">@color/enter_number_gray</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+    <style name="GrayInputEditText" parent="Widget.MaterialComponents.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/enter_number_gray</item>
+        <item name="android:textColorHint">@color/enter_number_gray</item>
+    </style>
+
+    <!-- Кастомная кнопка -->
+    <style name="MyGradientButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/gradientbutton</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <!-- Нижнее меню -->
+    <style name="Widget.RPMProekt.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconSize">24dp</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.RPMProekt.BottomNavigation.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.RPMProekt.BottomNavigation.Inactive</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="itemPaddingTop">0dp</item>
+        <item name="itemPaddingBottom">0dp</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+    </style>
+
+    <style name="TextAppearance.RPMProekt.BottomNavigation.Active" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="TextAppearance.RPMProekt.BottomNavigation.Inactive" parent="TextAppearance.RPMProekt.BottomNavigation.Active">
+        <!-- Можно задать другие параметры для неактивного состояния -->
+    </style>
+
+    <style name="CalendarDay">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/toolbar_btn_Gray</item>
+    </style>
+
+    <style name="CalendarDate" parent="CalendarDay">
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/toolbar_btn_Gray</item>
+    </style>
+
+    <style name="ComputerButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+
+
+</resources>

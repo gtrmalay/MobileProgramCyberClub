@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Цвет в фокусе -->
+    <item android:color="@color/enter_number_gray" android:state_focused="true"/>
+    <!-- Цвет по умолчанию -->
+    <item android:color="@color/enter_number_gray"/>
+</selector>

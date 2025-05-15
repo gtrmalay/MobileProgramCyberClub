@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Цвет для активной (выбранной) кнопки -->
+    <item android:color="@color/active_toolbar_btn_Gray" android:state_checked="true"/>
+    <!-- Цвет для неактивных кнопок -->
+    <item android:color="@color/toolbar_btn_Gray"/>
+</selector>

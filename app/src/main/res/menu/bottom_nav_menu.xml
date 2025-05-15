@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_my_club"
+        android:icon="@drawable/ic_my_club"
+        android:title="Мой клуб"/>
+
+
+    <item
+        android:id="@+id/nav_booking"
+        android:icon="@drawable/ic_booking"
+        android:title="Записи"/>
+
+    <item
+        android:id="@+id/nav_menu"
+        android:icon="@drawable/ic_menu"
+        android:title="Меню"/>
+</menu>
